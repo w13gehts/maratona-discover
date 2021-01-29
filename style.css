@@ -75,7 +75,7 @@ button:hover {
 
 .button.new {
   display: inline-block;
-  margin-bottom: 0.8rem;
+  margin: 1rem 0 0.8rem 0;
 }
 
 .button.cancel {
@@ -95,7 +95,7 @@ button:hover {
 /* ----------------- header ----------------- */
 header {
   background: #2d4a22;
-  padding: 2rem 0 10rem;
+  padding: 2rem 0 12rem;
   text-align: center;
 }
 
@@ -106,7 +106,7 @@ header {
 
 /* ----------------- balance ----------------- */
 #balance {
-  margin-top: -8rem;
+  margin-top: -7.5rem;
 }
 
 #balance h2 {
@@ -209,6 +209,8 @@ td.expense {
 
   opacity: 0;
   visibility: hidden;
+
+  z-index: 999;
 }
 
 .modal-overlay.active {
@@ -219,6 +221,8 @@ td.expense {
 .modal {
   background: #f0f2f5;
   padding: 2.4rem;
+  position: relative;
+  z-index: 1;
 }
 
 /* ----------------- form ----------------- */
@@ -272,7 +276,7 @@ footer {
 
   #balance {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
   }
 }
